@@ -11,9 +11,12 @@ from aiogram.types import Message, FSInputFile
 
 from huggingface_apis.text_generation import generate_text_response
 from huggingface_apis.image_generation import generate_fast_image
+from dotenv import load_dotenv()
+
+load_dotenv()
 
 # Bot token can be obtained via https://t.me/BotFather
-TOKEN = "8652907478:AAGkkb_4qPS4I1b-Ah4-LKhKCBKYNgdcYAw"
+TOKEN = os.getenv("HUGGING_FACE_API_TOKEN")
 
 bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 dp = Dispatcher()
