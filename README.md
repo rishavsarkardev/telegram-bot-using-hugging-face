@@ -1,4 +1,4 @@
-# 🤖 Telegram AI Bot
+# [![Telegram Badge](https://vercel.app)](https://t.me) Telegram AI Bot
 
 ## ✅ Purpose
 This repository demonstrates a Telegram bot creation setup. It serves as an AI assistant that can maintain a conversation and generate images on demand, all powered by open-source Hugging Face models running locally.
